@@ -9,15 +9,13 @@ table, tbody, thead, th, tr, td {
 	list-style: none;
 }
 
-table {
-	width: 100%;
-}
-
 div {
 	margin: 10px 20px;
 	padding: 10px;
 	border: 2px solid darkred;
 }
+
+/* @group This Is One Entry */
 
 ul.thisIsOneEntry,
 ul.thisIsOneEntry li {
@@ -25,6 +23,8 @@ ul.thisIsOneEntry li {
 }
 
 ul.thisIsOneEntry li {
+	display: inline-block;
+	max-width: 180px;
 }
 
 ul.thisIsOneEntry li > ul {
@@ -34,10 +34,17 @@ ul.thisIsOneEntry li > ul > li {
 }
 
 ul.thisIsOneEntry li.modKeys > ul > li {
-	float: left;
 }
 
 ul.thisIsOneEntry li.modKeys > ul > li:first-child {
-	float: none;
+	display: block;
 }
 
+/* @end */
+
+li.appName, 
+li.subtitleNotes, 
+li.titleDesc 
+{
+	display: none !important;
+}
