@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>YOPKS Cheat Sheet Generator for Your Own Personal Keyboard Shortcuts (Mac Edition)</title>
+		<link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+		<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+		<link href="css/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+		<link href="css/print.css" media="print" rel="stylesheet" type="text/css">
+	</head>
+
+	<body>
+		
+		<div id="header">
+			<devnote>this is YOPKS div#header - it will have a logo and site description as well as control buttons to view your shortcuts list in printable view, save as PDF, etc. (maybe eventually a Mac .prefs file of your shortcuts and/or an AutoHotKey .akh script of your shortcuts for download)</devnote>
+			<ul id="logo">
+				<li><h1>LOGO HERE</h1></li>
+				<li><h1>YOUR OWN PERSONAL KEYBOARD SHORTCUTS CHEAT SHEET GENERATOR</h1></li>
+			</ul>
+			<ul id="siteInfo">
+				<li><h2>SHORT SITE INFO HERE</h2></li>
+				<li><h3>LONGER SITE INFO HERE</h3></li>
+			</ul>
+			<ul id="siteLinks" class="toolbar">
+				<li>LOGIN/REGISTER</li>
+				<li>HELP</li>
+				<li>CONTACT</li>
+			</ul>
+		</div><!-- /div#header -->
+		
+		<div id="torso">
+			<devnote>this is YOPKS div#torso</devnote>
+			
+			<div id="addNewSelector">
+				
+				<ul class="thisIsOneEntry">
+					<li class="modKeys">
+						modifier keys (select the modifier icons used)
+						<ul>
+							<li><img src="img/key-shift.png" alt="shift" /></li>
+							<li><img src="img/key-ctrl.png" alt="control" /></li>
+							<li><img src="img/key-alt.png" alt="alt/option" /></li>
+							<li><img src="img/key-cmd.png" alt="command/cmd" /></li>
+						</ul>
+					</li>
+					<li class="extraKeys">
+						additional keys (select any additional keys)
+						<input type="text" />
+					</li>
+					<li class="textVersion">
+						text version of your shortcut
+						<input type="text" />
+					</li>
+					<li class="titleDesc">
+						title/description (tell what action the shortcut performs)
+						<input type="text" />
+					</li>
+					<li class="subtitleNotes">
+						sub-title/notes (anything else you need to remember?)
+						<input type="text" />
+					</li>
+					<li class="appName">
+						application name (pull icon from iUseThis)
+						<input type="text" />
+					</li>
+					<li>
+						<button>
+							+ add this shortcut to yourShortcutList
+						</button>
+					</li>
+				</ul><!-- /ul.thisIsOneEntry -->
+								
+			</div><!-- /div#addNewSelector -->
+			
+			<div id="yourShortcutList">
+				
+				<devnote>this is YOPKS div#yourShortcutList - it will list all the shortcuts you've added using the shortcut maker above</devnote>
+				
+				<h4>MY OWN PERSONAL KEYBOARD SHORTCUTS CHEAT SHEET</h4>
+				
+				<ul id="userLinks" class="toolbar">
+					<li>PDF</li>
+					<li>MAC.PREF</li>
+					<li>WIN.AHK</li>
+				</ul>
+				
+				<ul class="thisIsOneEntry">
+					<li class="modKeys">
+						modifier keys (select the modifier icons used)
+						<ul class="modKeys">
+							<li><img src="img/key-shift.png" alt="command/cmd" /></li>
+							<li><img src="img/key-ctrl.png" alt="command/cmd" /></li>
+							<li><img src="img/key-alt.png" alt="command/cmd" /></li>
+							<li><img src="img/key-cmd.png" alt="command/cmd" /></li>
+						</ul>
+					</li>
+					<li class="extraKeys">
+						additional keys (select any additional keys)
+						<input type="text" />
+					</li>
+					<li class="textVersion">
+						text version of your shortcut
+						<input type="text" />
+					</li>
+					<li class="titleDesc">
+						title/description (tell what action the shortcut performs)
+						<input type="text" />
+					</li>
+					<li class="subtitleNotes">
+						sub-title/notes (anything else you need to remember?)
+						<input type="text" />
+					</li>
+					<li class="appName">
+						application name (pull icon from iUseThis)
+						<input type="text" />
+					</li>
+					<li>
+						<button>
+							X delete this from yourShortcutList
+						</button>
+					</li>
+				</ul><!-- /ul.thisIsOneEntry -->
+			
+			</div><!-- /div#yourShortcutList -->
+			
+		</div><!-- /div#torso -->
+		
+		<div id="footer">
+			<devnote>this is YOPKS div#footer</devnote>
+		</div><!-- /div#footer -->
+		
+		<!-- Scripts -->
+			<script src="http://bit.ly/jqueryjs" type="text/javascript" charset="utf-8" async defer></script>
+		<!-- /Scripts -->
+		
+	</body>
+
+</html>

@@ -1,0 +1,43 @@
+html {
+	overflow: scroll;
+}
+
+html, body, div, section, span, p, 
+a, ul, li, ol, dl, dd, dt, 
+table, tbody, thead, th, tr, td {
+	margin: 0;	padding: 0;
+	list-style: none;
+}
+
+table {
+	width: 100%;
+}
+
+div {
+	margin: 10px 20px;
+	padding: 10px;
+	border: 2px solid darkred;
+}
+
+ul.thisIsOneEntry,
+ul.thisIsOneEntry li {
+	overflow: hidden;
+}
+
+ul.thisIsOneEntry li {
+}
+
+ul.thisIsOneEntry li > ul {
+}
+
+ul.thisIsOneEntry li > ul > li {
+}
+
+ul.thisIsOneEntry li.modKeys > ul > li {
+	float: left;
+}
+
+ul.thisIsOneEntry li.modKeys > ul > li:first-child {
+	float: none;
+}
+
