@@ -1,8 +1,6 @@
 jQuery(document).ready(function($) {
 
-	var textVersionValue = '';
-
-	$('div#addNewSelector').find('ul.thisIsOneEntry li.modKeys ul li').click(function() {
+	$('div#addNewSelector').find('div.thisIsOneEntry').not('cloned').find('div.modKeys ul li').click(function() {
 
 		// toggle the class & set a var for the alt value
 		$(this).toggleClass('selected');
@@ -10,19 +8,35 @@ jQuery(document).ready(function($) {
 		print2textVersion();
 
 	}); // end click
+
+	$('div#addNewSelector').find('div.thisIsOneEntry').not('cloned').find('div.extraKeys').children('input').keyup(function(){
+		print2textVersion();
+	});
+
+	$('div#addNewSelector').find('div.thisIsOneEntry button.addButton').click(function() {
+		var clickedEntryGroup = $(this).parents('div.thisIsOneEntry').clone().addClass('cloned');
+		clickedEntryGroup.find('.addButton').replaceWith('<button class="delButton" />');
+		clickedEntryGroup.find('input').each(function(it){
+			var itsVal = $(this).val();
+			$(this).replaceWith('<div>'+itsVal+'</div>');
+		});
+		
+		$('div#shortcutsGoHere').append(clickedEntryGroup);
+	});
+
 	
 	function print2textVersion() {
 
 		var modKeysText = '';
 
-		$('li.modKeys ul li.selected').each(function() {
+		$('div#addNewSelector').find('div.modKeys ul li.selected').each(function() {
 			var thisModKeyAlt = $(this).find('img').attr('alt') + ' ';
 			modKeysText = modKeysText + thisModKeyAlt;
 		});
 
-		var extraKeysText = $('li.extraKeys').children('input').val();
+		var extraKeysText = $('div#addNewSelector').find('div.extraKeys').children('input').val();
 
-		$('li.textVersion input').val(modKeysText + ' ' + extraKeysText);
+		$('div#addNewSelector').find('div.textVersion span.textVersion').html(modKeysText + ' ' + extraKeysText);
 
 	}
 

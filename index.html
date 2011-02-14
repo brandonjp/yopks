@@ -34,42 +34,51 @@
 			
 			<div id="addNewSelector">
 				
-				<ul class="thisIsOneEntry">
-					<li class="modKeys">
-						modifier keys (select the modifier icons used)
+				<div class="thisIsOneEntry">
+
+					<div class="modKeys">
+						<span>modifier keys (select the modifier icons used)</span>
 						<ul>
 							<li><img src="img/key-shift.png" alt="shift" /></li>
 							<li><img src="img/key-ctrl.png" alt="control" /></li>
 							<li><img src="img/key-alt.png" alt="alt/option" /></li>
 							<li><img src="img/key-cmd.png" alt="command/cmd" /></li>
 						</ul>
-					</li>
-					<li class="extraKeys">
-						additional keys (select any additional keys)
-						<input type="text" />
-					</li>
-					<li class="textVersion">
-						text version of your shortcut
-						<input type="text" />
-					</li>
-					<li class="titleDesc">
-						title/description (tell what action the shortcut performs)
-						<input type="text" />
-					</li>
-					<li class="subtitleNotes">
-						sub-title/notes (anything else you need to remember?)
-						<input type="text" />
-					</li>
-					<li class="appName">
-						application name (pull icon from iUseThis)
-						<input type="text" />
-					</li>
-					<li>
-						<button>
-							+ add this shortcut to yourShortcutList
+					</div>
+					
+					<div class="extraKeys">
+						<span>additional keys (select any additional keys)</span>
+						<input type="text" value="additional keys" />
+					</div>
+					
+					<div class="actionButtons">
+						<button class="addButton">
+							+ add this shortcut to yourShortcutdivst
 						</button>
-					</li>
-				</ul><!-- /ul.thisIsOneEntry -->
+					</div>
+					
+					<div class="textVersion">
+						<span>text version of your shortcut</span>
+						<span class="textVersion">Text Version</span>
+					</div>
+					
+					<div class="titleDesc">
+						<span>title/description (tell what action the shortcut performs)</span>
+						<input type="text" value="title description" />
+					</div>
+					
+					<div class="appName">
+						<span>appdivcation name (pull icon from iUseThis)</span>
+						<input type="text" />
+					</div>
+					
+					<div class="subtitleNotes">
+						<span>sub-title/notes (anything else you need to remember?)</span>
+						<input type="text" value="subtitle notes" />
+					</div>
+					
+
+				</div><!-- /ul.thisIsOneEntry -->
 								
 			</div><!-- /div#addNewSelector -->
 			
@@ -85,42 +94,9 @@
 					<li>WIN.AHK</li>
 				</ul>
 				
-				<ul class="thisIsOneEntry">
-					<li class="modKeys">
-						modifier keys (select the modifier icons used)
-						<ul class="modKeys">
-							<li><img src="img/key-shift.png" alt="command/cmd" /></li>
-							<li><img src="img/key-ctrl.png" alt="command/cmd" /></li>
-							<li><img src="img/key-alt.png" alt="command/cmd" /></li>
-							<li><img src="img/key-cmd.png" alt="command/cmd" /></li>
-						</ul>
-					</li>
-					<li class="extraKeys">
-						additional keys (select any additional keys)
-						<input type="text" />
-					</li>
-					<li class="textVersion">
-						text version of your shortcut
-						<input type="text" />
-					</li>
-					<li class="titleDesc">
-						title/description (tell what action the shortcut performs)
-						<input type="text" />
-					</li>
-					<li class="subtitleNotes">
-						sub-title/notes (anything else you need to remember?)
-						<input type="text" />
-					</li>
-					<li class="appName">
-						application name (pull icon from iUseThis)
-						<input type="text" />
-					</li>
-					<li>
-						<button>
-							X delete this from yourShortcutList
-						</button>
-					</li>
-				</ul><!-- /ul.thisIsOneEntry -->
+				<div id="shortcutsGoHere">
+					
+				</div>
 			
 			</div><!-- /div#yourShortcutList -->
 			

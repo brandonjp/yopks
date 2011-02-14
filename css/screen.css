@@ -1,5 +1,6 @@
 html {
 	overflow: scroll;
+	font: medium/1.6 sans-serif;
 }
 
 html, body, div, section, span, p, 
@@ -9,42 +10,142 @@ table, tbody, thead, th, tr, td {
 	list-style: none;
 }
 
-div {
-	margin: 10px 20px;
-	padding: 10px;
-	border: 2px solid darkred;
+input[type=text] {
+	width: 480px;
+	height: 30px;
+	text-align: left;
+	padding: 0 2%;
+	font-size: 1.2em;	
 }
-
 /* @group This Is One Entry */
 
-ul.thisIsOneEntry,
-ul.thisIsOneEntry li {
+div.thisIsOneEntry div {
 	overflow: hidden;
-}
-
-ul.thisIsOneEntry li {
 	display: inline-block;
-	max-width: 180px;
 }
 
-ul.thisIsOneEntry li > ul {
-}
-
-ul.thisIsOneEntry li > ul > li {
-}
-
-ul.thisIsOneEntry li.modKeys > ul > li {
-}
-
-ul.thisIsOneEntry li.modKeys > ul > li:first-child {
+div.thisIsOneEntry {
+	overflow: hidden;
 	display: block;
+	width: 80%;
+	
+	margin: 16px auto;
+	padding: 16px;
+	
+	border: 2px solid aqua;
+	
+	-webkit-border-radius: 8px; 	-khtml-border-radius: 8px; 	-moz-border-radius: 8px; 	border-radius: 8px; 
+}
+
+div.thisIsOneEntry div {
+	border: 1px solid orange; 
+	margin: 8px;
+	padding: 8px;
+	float: left;
+}
+
+div.thisIsOneEntry div input {
+	display: block;
+}
+
+div.thisIsOneEntry div.modKeys ul li {
+	display: inline-block;
+}
+
+div.thisIsOneEntry div.modKeys ul li img {
+	background-color: transparent;
+	height: 50px;
+	
+	-webkit-border-radius: 10px; 	-khtml-border-radius: 10px; 	-moz-border-radius: 10px; 	border-radius: 10px; 
+}
+
+div.thisIsOneEntry div.modKeys ul li:hover img {
+	background-color: greenyellow;
+}
+
+div.thisIsOneEntry div.modKeys ul li.selected img {
+	background-color: orange;
+}
+
+div.thisIsOneEntry div.modKeys ul li:first-child {
+	display: inline-block;
+}
+
+
+div.thisIsOneEntry div.modKeys {
+	
+}
+
+div.thisIsOneEntry div.extraKeys {
+	
+}
+
+div.thisIsOneEntry div.extraKeys input {
+	width: 120px;
+	height: 50px;
+	text-align: center;
+	font-size: 2em;
+}
+
+div.thisIsOneEntry div.textVersion {
+	clear: both;
+}
+
+div.thisIsOneEntry div.textVersion span.textVersion {
+	display: inline-block;
+	width: 200px;
+	font-size: 1.4em;
+}
+
+div.thisIsOneEntry div.titleDesc {
+
+}
+
+div.thisIsOneEntry div.titleDesc input {
+
+}
+
+div.thisIsOneEntry div.subtitleNotes {
+
+}
+
+div.thisIsOneEntry div.subtitleNotes input {
+
+}
+
+div.thisIsOneEntry div.appName {
+	clear: both;
+}
+
+div.thisIsOneEntry div.appName input {
+	width: 180px;
+}
+
+div.thisIsOneEntry div.actionButtons {
+	display: inline-block;
+}
+
+div.thisIsOneEntry div.actionButtons button {
+	width: 120px;
+	height: 60px;
+}
+
+div.thisIsOneEntry div.actionButtons button.addButton {
+	border: 4px solid green; 
+}
+
+div.thisIsOneEntry div.actionButtons button.delButton {
+	border: 4px solid red; 
 }
 
 /* @end */
 
-li.appName, 
-li.subtitleNotes, 
-li.titleDesc 
-{
-	display: none !important;
+.selected img {
+	background-color: green;
+}
+
+
+
+span:first-child {
+	display: none;
 }
