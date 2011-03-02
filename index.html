@@ -18,17 +18,20 @@
 		<div id="header">
 			<devnote>this is YOPKS div#header - it will have a logo and site description as well as control buttons to view your shortcuts list in printable view, save as PDF, etc. (maybe eventually a Mac .prefs file of your shortcuts and/or an AutoHotKey .akh script of your shortcuts for download)</devnote>
 			<ul id="logo">
-				<li><h1>LOGO HERE</h1></li>
-				<li><h1>YOUR OWN PERSONAL KEYBOARD SHORTCUTS CHEAT SHEET GENERATOR</h1></li>
+				<li><h1>
+					<span>YOPKS</span>
+					<sub>Cheat Sheet Generator</sub>
+					</h1></li>
+				<li><h1>YOUR OWN PERSONAL KEYBOARD SHORTCUTS<br>CHEAT SHEET GENERATOR</h1></li>
 			</ul>
 			<ul id="siteInfo">
-				<li><h2>SHORT SITE INFO HERE</h2></li>
-				<li><h3>LONGER SITE INFO HERE</h3></li>
+				<li><h2>This is a simple site to generate your own personal keyboard shortcuts cheat sheet.</h2></li>
+				<li><h3>I frequently forget some of my seldom used keyboard shortcuts, so I created this simple app to help me generate a quick reference sheet. <em>Instructions:</em> Click on the shortcut keys you want to assign, describe it, then add it to your shortcut list.</h3></li>
 			</ul>
 			<ul id="siteLinks" class="toolbar">
-				<li>LOGIN/REGISTER</li>
-				<li>HELP</li>
-				<li>CONTACT</li>
+				<li><a href="#">LOGIN/REGISTER</a></li>
+				<li><a href="#">HELP</a></li>
+				<li><a href="#">CONTACT</a></li>
 			</ul>
 		</div><!-- /div#header -->
 		
@@ -39,20 +42,18 @@
 				
 				<div class="thisIsOneEntry">
 
-					<div class="modKeys">
-						<span>modifier keys (select the modifier icons used)</span>
-						<ul>
+					<div class="shortKeys">
+						<ul class="modKeys">
 							<li><img src="img/key-shift.png" alt="shift" /></li>
 							<li><img src="img/key-ctrl.png" alt="control" /></li>
 							<li><img src="img/key-alt.png" alt="alt/option" /></li>
 							<li><img src="img/key-cmd.png" alt="command/cmd" /></li>
 						</ul>
-					</div>
-					
 					<div class="extraKeys">
-						<span>additional keys (select any additional keys)</span>
 						<input type="text" value="additional keys" />
 					</div>
+					</div>
+					
 					
 					<div class="actionButtons">
 						<button class="addButton">

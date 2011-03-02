@@ -1,6 +1,6 @@
 jQuery(document).ready(function($) {
 
-	$('div#addNewSelector').find('div.thisIsOneEntry').not('cloned').find('div.modKeys ul li').click(function() {
+	$('div#addNewSelector').find('div.thisIsOneEntry').not('cloned').find('ul.modKeys li').click(function() {
 
 		// toggle the class & set a var for the alt value
 		$(this).toggleClass('selected');
@@ -29,7 +29,7 @@ jQuery(document).ready(function($) {
 
 		var modKeysText = '';
 
-		$('div#addNewSelector').find('div.modKeys ul li.selected').each(function() {
+		$('div#addNewSelector').find('ul.modKeys li.selected').each(function() {
 			var thisModKeyAlt = $(this).find('img').attr('alt') + ' ';
 			modKeysText = modKeysText + thisModKeyAlt;
 		});
