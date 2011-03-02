@@ -1,6 +1,45 @@
+8F4521 {
+	background: #8F4521;
+}
+
+DB6B32 {
+	background: #DB6B32;
+}
+
+8F7C21 {
+	background: #8F7C21;
+}
+
+DBBF32 {
+	background: rgba(219,191,050,0.5);
+	background: #DBBF32;
+}
+
+707070 {
+	background: #707070;
+}
+
+8F8F8F {
+	background: #8F8F8F;
+}
+
+
 html {
 	overflow: scroll;
-	font: medium/1.6 sans-serif;
+}
+
+body {
+	background-color: #fff;
+	background-image: -moz-linear-gradient(top, #DBBF32, #000); /* FF3.6 */
+	background-image: -webkit-gradient(linear,left top,left bottom,
+		color-stop(0.0, rgba(219,191,050,0.2)),
+		color-stop(0.1, rgba(219,191,050,0.4)),
+		color-stop(0.2, rgba(219,191,050,0.6)),
+		color-stop(0.6, rgba(219,191,050,0.0))); /* Saf4+, Chrome */
+	background-image: -webkit-linear-gradient(#DBBF32, #DBBF32); /* Chrome 10+, Saf6 */
+	background-image: linear-gradient(top, #DBBF32, #DBBF32);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#DBBF32', EndColorStr='#DBBF32'); /* IE6–IE9 */
+	background-repeat: no-repeat;
 }
 
 html, body, div, section, span, p, 
@@ -10,6 +49,21 @@ table, tbody, thead, th, tr, td {
 	list-style: none;
 }
 
+h1, h2, h3, h4, h5, h6 {
+	font: medium/1.6 Neuton, sans-serif;
+	font-weight: bold;
+}
+
+div#body {
+	font: medium/1.6 Nobile, sans-serif;
+	width: 900px;
+	margin: auto;
+}
+
+div#header {
+	margin: 1em;
+}
+
 input[type=text] {
 	width: 480px;
 	height: 30px;
@@ -17,6 +71,7 @@ input[type=text] {
 	padding: 0 2%;
 	font-size: 1.2em;	
 }
+
 /* @group This Is One Entry */
 
 div.thisIsOneEntry div {
@@ -68,7 +123,7 @@ div.thisIsOneEntry div.modKeys ul li.selected img {
 }
 
 div.thisIsOneEntry div.modKeys ul li:first-child {
-	display: inline-block;
+	display: block;
 }
 
 
